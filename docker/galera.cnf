@@ -1,0 +1,11 @@
+[mysqld]
+wsrep_on=1
+wsrep_provider=/usr/lib/galera/libgalera_smm.so
+wsrep_cluster_address=gcomm://
+wsrep_sst_method=rsync
+wsrep_cluster_name=galera_cluster
+wsrep_debug=1
+binlog_format=ROW
+default_storage_engine=InnoDB
+innodb_autoinc_lock_mode=2
+innodb_locks_unsafe_for_binlog=1
